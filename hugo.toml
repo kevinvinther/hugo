@@ -1,0 +1,4 @@
+baseURL = 'http://kevinvinther.github.io/'
+languageCode = 'en-us'
+title = 'Kevin Vinther'
+theme = 'paper'
