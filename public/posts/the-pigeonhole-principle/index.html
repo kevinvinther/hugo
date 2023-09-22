@@ -1,0 +1,327 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>The Pigeonhole Principle - Kevin Vinther</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="Introduction The pigeonhole principle is a mathematical principle and counting argument,1 which is often accompanied with the hypothetical scenarios of pigeons and pigeonholes (from which the name comes).
+Imagine you have $n&#43;1$ pigeons, and $n$ pigeonholes. The pigeonhole principle states that, since there is one more pigeon than there is pigeonholes, at least one of the pigeonholes must hold two pigeons.
+For example, if you have 11 pigeons and 10 pigeonholes, or equivalently, 11 pencils and 10 pencil cases, then at least one of the pigeonholes or pencil cases must hold 2 pigeons or pencils, respectively." />
+  <meta name="author" content="Kevin Vinther" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://kevinvinther.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="http://kevinvinther.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="http://kevinvinther.github.io/theme.png" />
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="http://kevinvinther.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://kevinvinther.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.118.2">
+
+  
+  
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="The Pigeonhole Principle">
+<meta itemprop="description" content="Introduction The pigeonhole principle is a mathematical principle and counting argument,1 which is often accompanied with the hypothetical scenarios of pigeons and pigeonholes (from which the name comes).
+Imagine you have $n&#43;1$ pigeons, and $n$ pigeonholes. The pigeonhole principle states that, since there is one more pigeon than there is pigeonholes, at least one of the pigeonholes must hold two pigeons.
+For example, if you have 11 pigeons and 10 pigeonholes, or equivalently, 11 pencils and 10 pencil cases, then at least one of the pigeonholes or pencil cases must hold 2 pigeons or pencils, respectively."><meta itemprop="datePublished" content="2023-09-22T09:50:22+02:00" />
+<meta itemprop="dateModified" content="2023-09-22T09:50:22+02:00" />
+<meta itemprop="wordCount" content="807">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Pigeonhole Principle"/>
+<meta name="twitter:description" content="Introduction The pigeonhole principle is a mathematical principle and counting argument,1 which is often accompanied with the hypothetical scenarios of pigeons and pigeonholes (from which the name comes).
+Imagine you have $n&#43;1$ pigeons, and $n$ pigeonholes. The pigeonhole principle states that, since there is one more pigeon than there is pigeonholes, at least one of the pigeonholes must hold two pigeons.
+For example, if you have 11 pigeons and 10 pigeonholes, or equivalently, 11 pencils and 10 pencil cases, then at least one of the pigeonholes or pencil cases must hold 2 pigeons or pencils, respectively."/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="http://kevinvinther.github.io/"
+      >Kevin Vinther</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+        <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">The Pigeonhole Principle</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Sep 22, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h1 id="introduction">Introduction</h1>
+<p>The pigeonhole principle is a mathematical principle and counting argument,<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> which is often accompanied with the hypothetical scenarios of pigeons and pigeonholes (from which the name comes).</p>
+<p>Imagine you have $n+1$ pigeons, and $n$ pigeonholes. The pigeonhole principle states that, since there is one more pigeon than there is pigeonholes, <strong>at least</strong> one of the pigeonholes must hold two pigeons.</p>
+<p>For example, if you have 11 pigeons and 10 pigeonholes, or equivalently, 11 pencils and 10 pencil cases, then at least one of the pigeonholes or pencil cases must hold 2 pigeons or pencils, respectively.</p>
+<p>Now, what would happen if we had 21 pencils but only 10 pencil cases?</p>
+<h1 id="generalization">Generalization</h1>
+<p>We can generalize the principle. Imagine you have $n$ pencils, and $k$ pencil cases. Then, according to the generalized pigeonhole principle, there is at least one pencil case containing $\lceil n / k \rceil$<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> pencils.</p>
+<p>Referring back to the question from earlier, consider having 21 pencils, but only 10 pencil cases. The generalization of the pigeonhole principle then shows us that there must be $\lceil 21 / 10 \rceil = 3$  pencils in one of the pencil cases.</p>
+<h1 id="use-in-proofs">Use in Proofs</h1>
+<p>Now, while this is very simple and may seem very intuitive, it can be powerfully used in proofs. For example, take the proof of the following theorem:</p>
+<p>Every sequence of $n^2 + 1$ distinct real numbers contains a subsequence of length $n+1$ that is either strictly increasing or strictly decreasing.</p>
+<p>Consider the proof for this theorem:<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>
+Let $a_1, a_2, &hellip;, a_{n^2+1}$ be a sequence of distinct real numbers. Associate an <strong>ordered pair</strong>  $(i_k, d_k)$ with each term of the sequence, $a_k$. Here $i_k$ is the length of the longest <em>increasing</em> subsequence starting at $a_k$, and $d_k$ is the longest <em>decreasing</em> subsequence starting at $a_k$.
+Now, suppose that there are no increasing nor decreasing subsequences of length $n+1$. Then $i_k$ and $d_k$ are both positive integers less than or equal to $n$, for $k = 1, 2, &hellip;, n^2 +1$. Hence, by the product rule,<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> there are $n^2$ possible ordered pairs for $(i_k, d_k)$.
+Now comes the part where we use the pigeonhole principle. By the pigeonhole principle, two of these $n^2 + 1$ ordered pairs are equal as there are only $n^2$ possible ordered pairs, but we have $n^2 + 1$ elements.
+In other words, there exists two different terms $a_s$ and $a_t$, where $s &lt; t$, such that $i_s = i_t$ and $d_s = d_t$.
+We will show that this is impossible. Because the terms of the sequence are distinct, either $a_s &lt; a_t$ or $a_t &gt; a_s$. Then if $a_s &lt; a_t$, because $i_s = i_t$, an increasing subsequence of length $i_t + 1$ can be built starting at $a_s$, by taking $a_s$ followed by an increasing subsequence of length $i_t$ beginning at $a_t$. This is a contradiction, as we supposed that there were no subsequences of length $n+1$, yet we found one. If $a_s &gt; a_t$ the same reasoning shows that $d_s$ must be greater than $d_t$, which is a contradiction. This concludes the proof.</p>
+<h1 id="proofs-of-the-principles">Proofs of the Principles</h1>
+<p><strong>The Pigeonhole Principle</strong>:
+We use a proof by contraposition. Assume that there must be <strong>at most</strong> 1 pigeon per pigeonhole. Then the maximum number of pigeons is $n$. This contradicts our initial assumptions that there are $n+1$ pigeons. This concludes the proof.</p>
+<p><strong>The Generalized Principle</strong>:
+Assume we only have at most $\lceil n/k \rceil - 1$   pigeons per pigeonhole. Then the number of pigeons must be $k(\lceil n/k \rceil - 1)$. However,
+$$k\left( \left \lceil \frac{n}{k} \right \rceil - 1\right) &lt; k\left (\left (\frac{n}{k} +1 \right ) - 1\right)$$
+where the inequality $\lceil n/k \rceil &lt; (n/k)+1$<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> has been used.
+This shows that, if we indeed assume that each pigeonhole has at most $\lceil n/k \rceil - 1$ pigeons, then the total number of pigeons must be strictly less than $k(n/k)$ which is the total number of pigeons. This is a contradiction, as it claims that the number of pigeons is less than $n$, but there are $n$ pigeons. This concludes the proof.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In conclusion, the pigeonhole principle, while seemingly simple and intuitive, serves as a potent tool in mathematical proofs.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>A counting argument proves statements by counting objects in two different ways, showing that the two counts must be equal&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>The ceiling function ($\lceil x \rceil$) maps the value $x$ to its nearest integer greater than or equal to $x$.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>This proof is from Discrete Mathematics and its Applications, Eighth Edition by Kenneth Rosen&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>If there are $n_1$ ways to do task one of two, and for each of these ways, there are $n_2$ ways to do the second task, then there are $n_1n_2$ ways to do the procedure.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>The inequality $\lceil n/k \rceil &lt; (n/k)+1$ holds because the ceiling functions always rounds a non-integer value up to the nearest integer.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="http://kevinvinther.github.io/posts/zettelkasten-process/"
+      ><span>A short introduction to how I use the Zettelkasten method</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="http://kevinvinther.github.io/">Kevin Vinther</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

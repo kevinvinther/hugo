@@ -1,0 +1,318 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>A short introduction to how I use the Zettelkasten method - Kevin Vinther</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  <meta name="description" content="The Zettelkasten method was developed by Niklas Luhmann, a german sociologist. He made many contributions to the field of sociology during his lifetime, and contributed his great efficacy to his method of taking and organizing notes.
+NOTE: When reading about the Zettelkasten, I have found a lot of conflicting ways to use specifically fleeting notes and literature notes. In this article I will describe the way I use them.
+Types of Notes In the Zettelkasten note-taking method, there are five different types of notes:" />
+  <meta name="author" content="Kevin Vinther" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://kevinvinther.github.io/main.min.css" />
+
+  
+  <script
+    defer
+    src="http://kevinvinther.github.io/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+   
+  <link rel="preload" as="image" href="http://kevinvinther.github.io/theme.png" />
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  <link rel="icon" href="http://kevinvinther.github.io/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://kevinvinther.github.io/apple-touch-icon.png" />
+
+  
+  <meta name="generator" content="Hugo 0.118.2">
+
+  
+  
+
+  
+  
+  
+  
+  
+  <meta itemprop="name" content="A short introduction to how I use the Zettelkasten method">
+<meta itemprop="description" content="The Zettelkasten method was developed by Niklas Luhmann, a german sociologist. He made many contributions to the field of sociology during his lifetime, and contributed his great efficacy to his method of taking and organizing notes.
+NOTE: When reading about the Zettelkasten, I have found a lot of conflicting ways to use specifically fleeting notes and literature notes. In this article I will describe the way I use them.
+Types of Notes In the Zettelkasten note-taking method, there are five different types of notes:"><meta itemprop="datePublished" content="2023-08-01T11:33:12+02:00" />
+<meta itemprop="dateModified" content="2023-08-01T11:33:12+02:00" />
+<meta itemprop="wordCount" content="810">
+<meta itemprop="keywords" content="" />
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A short introduction to how I use the Zettelkasten method"/>
+<meta name="twitter:description" content="The Zettelkasten method was developed by Niklas Luhmann, a german sociologist. He made many contributions to the field of sociology during his lifetime, and contributed his great efficacy to his method of taking and organizing notes.
+NOTE: When reading about the Zettelkasten, I have found a lot of conflicting ways to use specifically fleeting notes and literature notes. In this article I will describe the way I use them.
+Types of Notes In the Zettelkasten note-taking method, there are five different types of notes:"/>
+
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
+  <div class="relative z-50 mr-auto flex items-center">
+    <a
+      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
+      href="http://kevinvinther.github.io/"
+      >Kevin Vinther</a
+    >
+    <div
+      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+        <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">A short introduction to how I use the Zettelkasten method</h1>
+
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Aug 1, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p>The Zettelkasten method was developed by Niklas Luhmann, a german sociologist. He made many contributions to the field of sociology during his lifetime, and contributed his great efficacy to his method of taking and organizing notes.</p>
+<p><strong>NOTE</strong>: When reading about the Zettelkasten, I have found a lot of conflicting ways to use specifically fleeting notes and literature notes. In this article I will describe the way I use them.</p>
+<h1 id="types-of-notes">Types of Notes</h1>
+<p>In the Zettelkasten note-taking method, there are five different types of notes:</p>
+<ul>
+<li>Fleeting Notes</li>
+<li>Literature Notes</li>
+<li>Permanent Notes</li>
+<li>Index Notes</li>
+<li>Keyword Notes</li>
+</ul>
+<p>We&rsquo;ll start with the fleeting note, as it is usually the first note you make in the note-taking process.</p>
+<h2 id="fleeting-notes">Fleeting Notes</h2>
+<p>During the day you might have many different ideas and thoughts that you want to expand upon. For this, you create a fleeting note. Fleeting Notes are notes that capture the thoughts you have while in the shower, on a walk, etc. Thoughts that you get seemingly randomly. The goal of the fleeting note, is for it to fill one of the following criteria:</p>
+<ul>
+<li>You want to remember the idea by making it into a permanent note (more on this later)</li>
+<li>You want to use the idea in your work</li>
+</ul>
+<p>You do not need to make any thought that is worth something a fleeting note. If you can easily translate it into a permanent note, you can make a permanent note with the idea instead.</p>
+<p>You should seek to turn your fleeting notes into permanent notes as soon as possible, as you might forget the context of the fleeting note, thus deeming it invaluable.</p>
+<h2 id="literature-notes">Literature Notes</h2>
+<p>Literature notes are the types of notes most people will take when they take notes on a book, homework, articles etc. However, when using literature notes you usually only want to review your highlights (such as those from the fleeting notes), and not actually look at the material. This will force you to actively recall what you have read, and thus make you remember it better and rephrase it in your own words.</p>
+<p>While reviewing the highlights, you should rephrase this into your own words. Furthermore, your entire literature note should make sense by itself if you read it much later, after having forgotten the source material. Many will use the literature note as an atomic note in itself. I do not do this, instead I use literature notes as a collection of the fleeting notes rephrased in my own words. These will then become permanent notes.</p>
+<h2 id="permanent-notes">Permanent Notes</h2>
+<p>After having written literature notes, you will rewrite these and turn them into permanent notes. Permanent notes are small, atomic notes which stand on their own. Permanent notes are written not in the context of the source material, but in the context of your own ideas. This also means that while literature notes can have only one connection: the source material; a permanent note can have many. The strength of the Zettelkasten system is in the connection of permanent notes.</p>
+<p>Whenever you write a new permanent note, always have in mind that you should attempt to find other permanent notes to connect it to. Assume that you are writing a permanent note about sourdough fermentation. If you build your information from the ground up, you will most likely also have notes for fermentation and sourdough themself. These notes could be linked to a note about the fermentation of sourdough. If this is not the case, then you can create a fleeting note reminding yourself to research these topics, or, if you already have sufficient knowledge on the topics you can create permanent notes on these too.</p>
+<p>The &ldquo;web&rdquo; of permanent notes that you get from connecting the notes aids in your memory of the information in the notes, as you can easily connect them to other facts. Sönke Ahrens argues in his book &ldquo;How to Take Smart Notes&rdquo; that this also means there is no reason for flashcards, as information stays isolated. While I do not agree with this, it shows that the connection of notes really do aid in memory.</p>
+<h2 id="index-and-keyword-notes">Index and Keyword Notes</h2>
+<p>I myself do not use these types of notes often, but they can be a great way to connect notes together, and help create the web of notes.</p>
+<h3 id="index-notes">Index Notes</h3>
+<p>Index notes are clusters of related permanent notes. For example, you could have a note called &ldquo;Sourdough Fermentation Process&rdquo; which links to multiple notes about the sourdough fermentation process.</p>
+<h3 id="keyword-notes">Keyword Notes</h3>
+<p>Keyword notes contain a list of relevant notes, but at a much more general level. You can see it as index notes containing a table of contents for a chapter, and keyword notes representing a table of contents for a book.</p>
+<h1 id="sources">Sources</h1>
+<ul>
+<li>How to Take Smart Notes by Sönke Ahrens</li>
+<li><a href="https://medium.com/@fairylights_io/the-zettelkasten-method-examples-to-help-you-get-started-8f8a44fa9ae6">The Zettelkasten Method: Examples to help you get started by Rebecca Williams on Medium</a></li>
+</ul>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    <a
+      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="http://kevinvinther.github.io/posts/the-pigeonhole-principle/"
+      ><span class="mr-1.5">←</span><span>The Pigeonhole Principle</span></a
+    >
+    
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
+>
+  <div class="mr-auto">
+    &copy; 2023
+    <a class="link" href="http://kevinvinther.github.io/">Kevin Vinther</a>
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >Powered by Hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >✎ Paper</a
+  >
+</footer>
+
+  </body>
+</html>

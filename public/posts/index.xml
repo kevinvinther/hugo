@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Kevin Vinther</title>
+    <link>http://kevinvinther.github.io/posts/</link>
+    <description>Recent content in Posts on Kevin Vinther</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Sep 2023 09:50:22 +0200</lastBuildDate><atom:link href="http://kevinvinther.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Pigeonhole Principle</title>
+      <link>http://kevinvinther.github.io/posts/the-pigeonhole-principle/</link>
+      <pubDate>Fri, 22 Sep 2023 09:50:22 +0200</pubDate>
+      
+      <guid>http://kevinvinther.github.io/posts/the-pigeonhole-principle/</guid>
+      <description>Introduction The pigeonhole principle is a mathematical principle and counting argument,1 which is often accompanied with the hypothetical scenarios of pigeons and pigeonholes (from which the name comes).
+Imagine you have $n+1$ pigeons, and $n$ pigeonholes. The pigeonhole principle states that, since there is one more pigeon than there is pigeonholes, at least one of the pigeonholes must hold two pigeons.
+For example, if you have 11 pigeons and 10 pigeonholes, or equivalently, 11 pencils and 10 pencil cases, then at least one of the pigeonholes or pencil cases must hold 2 pigeons or pencils, respectively.</description>
+    </item>
+    
+    <item>
+      <title>A short introduction to how I use the Zettelkasten method</title>
+      <link>http://kevinvinther.github.io/posts/zettelkasten-process/</link>
+      <pubDate>Tue, 01 Aug 2023 11:33:12 +0200</pubDate>
+      
+      <guid>http://kevinvinther.github.io/posts/zettelkasten-process/</guid>
+      <description>The Zettelkasten method was developed by Niklas Luhmann, a german sociologist. He made many contributions to the field of sociology during his lifetime, and contributed his great efficacy to his method of taking and organizing notes.
+NOTE: When reading about the Zettelkasten, I have found a lot of conflicting ways to use specifically fleeting notes and literature notes. In this article I will describe the way I use them.
+Types of Notes In the Zettelkasten note-taking method, there are five different types of notes:</description>
+    </item>
+    
+  </channel>
+</rss>
