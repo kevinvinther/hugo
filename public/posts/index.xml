@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- 0.134.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Sep 2024 11:14:12 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>En kort introduktion til Anki</title>
+      <link>http://localhost:1313/posts/anki-introduktion/</link>
+      <pubDate>Wed, 11 Sep 2024 11:14:12 +0200</pubDate>
+      <guid>http://localhost:1313/posts/anki-introduktion/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Mål&lt;/strong&gt;: Denne artikel vil give en kort introduktion til huskekortsprogrammet Anki. Introduktionen vil bestå af følgende:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Motivation for hvorfor Anki kan være et gavnligt program&lt;/li&gt;
+&lt;li&gt;Hvornår man skal bruge Anki&lt;/li&gt;
+&lt;li&gt;Oversigt over brugeroverfladen&lt;/li&gt;
+&lt;li&gt;Add-ons og delte decks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Anki kan downloades på følgende links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows/Mac/Linux: &lt;a href=&#34;https://apps.ankiweb.net/&#34;&gt;https://apps.ankiweb.net/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;iOS: &lt;a href=&#34;https://apps.apple.com/us/app/ankimobile-flashcards/id373493387&#34;&gt;https://apps.apple.com/us/app/ankimobile-flashcards/id373493387&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Android: &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.ichi2.anki&amp;amp;hl=en&#34;&gt;https://play.google.com/store/apps/details?id=com.ichi2.anki&amp;amp;hl=en&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;introduktion&#34;&gt;Introduktion&lt;/h1&gt;
+&lt;p&gt;Anki er et huskekortsprogram der kan bruges til at huske alt der kan nedskrives på et huskekort. Ankis algoritme tillader dig at huske uden at du behøver gøre andet, end at bruge programmet hver dag, og kigge de kort igennem, som programmet vil have dig til at kigge igennem. Dette gør det til et fantastisk program til at bruge til studie, selvstudie, arbejde m.m. Du kan for eksempel bruge det til at lære et nyt sprog, huske alle verdens lande, huske beviser og meget mere.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>En kort introduktion til Anki | My New Hugo Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="Mål: Denne artikel vil give en kort introduktion til huskekortsprogrammet Anki. Introduktionen vil bestå af følgende:
+
+Motivation for hvorfor Anki kan være et gavnligt program
+Hvornår man skal bruge Anki
+Oversigt over brugeroverfladen
+Add-ons og delte decks
+
+Anki kan downloades på følgende links:
+
+Windows/Mac/Linux: https://apps.ankiweb.net/
+iOS: https://apps.apple.com/us/app/ankimobile-flashcards/id373493387
+Android: https://play.google.com/store/apps/details?id=com.ichi2.anki&amp;hl=en
+
+Introduktion
+Anki er et huskekortsprogram der kan bruges til at huske alt der kan nedskrives på et huskekort. Ankis algoritme tillader dig at huske uden at du behøver gøre andet, end at bruge programmet hver dag, og kigge de kort igennem, som programmet vil have dig til at kigge igennem. Dette gør det til et fantastisk program til at bruge til studie, selvstudie, arbejde m.m. Du kan for eksempel bruge det til at lære et nyt sprog, huske alle verdens lande, huske beviser og meget mere.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/anki-introduktion/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/anki-introduktion/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      En kort introduktion til Anki
+    </h1>
+    <div class="post-meta"><span title='2024-09-11 11:14:12 +0200 CEST'>September 11, 2024</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#introduktion" aria-label="Introduktion">Introduktion</a></li>
+                <li>
+                    <a href="#hvorfor-anki" aria-label="Hvorfor Anki?">Hvorfor Anki?</a><ul>
+                        
+                <li>
+                    <a href="#huskekort" aria-label="Huskekort">Huskekort</a></li>
+                <li>
+                    <a href="#spaced-repetition" aria-label="Spaced Repetition">Spaced Repetition</a></li>
+                <li>
+                    <a href="#brugervenlighed" aria-label="Brugervenlighed">Brugervenlighed</a></li></ul>
+                </li>
+                <li>
+                    <a href="#hvorn%c3%a5r-skal-man-bruge-anki" aria-label="Hvornår Skal Man Bruge Anki?">Hvornår Skal Man Bruge Anki?</a></li>
+                <li>
+                    <a href="#hvordan-bruger-man-anki" aria-label="Hvordan Bruger Man Anki?">Hvordan Bruger Man Anki?</a><ul>
+                        
+                <li>
+                    <a href="#decks" aria-label="Decks">Decks</a></li>
+                <li>
+                    <a href="#tilf%c3%b8j-nye-kort" aria-label="Tilføj Nye Kort">Tilføj Nye Kort</a><ul>
+                        
+                <li>
+                    <a href="#brug-af-cloze" aria-label="Brug Af Cloze">Brug Af Cloze</a></li></ul>
+                </li>
+                <li>
+                    <a href="#database-af-huskekort" aria-label="Database Af Huskekort">Database Af Huskekort</a></li>
+                <li>
+                    <a href="#statistik" aria-label="Statistik">Statistik</a></li>
+                <li>
+                    <a href="#synkronisering" aria-label="Synkronisering">Synkronisering</a></li>
+                <li>
+                    <a href="#dine-decks" aria-label="Dine Decks">Dine Decks</a></li>
+                <li>
+                    <a href="#lav-et-nyt-deck" aria-label="Lav Et Nyt Deck">Lav Et Nyt Deck</a></li></ul>
+                </li>
+                <li>
+                    <a href="#add-ons-og-delte-decks" aria-label="Add-ons Og Delte Decks">Add-ons Og Delte Decks</a><ul>
+                        
+                <li>
+                    <a href="#add-ons" aria-label="Add-ons">Add-ons</a></li>
+                <li>
+                    <a href="#delte-decks" aria-label="Delte Decks">Delte Decks</a></li></ul>
+                </li>
+                <li>
+                    <a href="#viderel%c3%a6sning" aria-label="Viderelæsning">Viderelæsning</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><strong>Mål</strong>: Denne artikel vil give en kort introduktion til huskekortsprogrammet Anki. Introduktionen vil bestå af følgende:</p>
+<ul>
+<li>Motivation for hvorfor Anki kan være et gavnligt program</li>
+<li>Hvornår man skal bruge Anki</li>
+<li>Oversigt over brugeroverfladen</li>
+<li>Add-ons og delte decks</li>
+</ul>
+<p>Anki kan downloades på følgende links:</p>
+<ul>
+<li>Windows/Mac/Linux: <a href="https://apps.ankiweb.net/">https://apps.ankiweb.net/</a></li>
+<li>iOS: <a href="https://apps.apple.com/us/app/ankimobile-flashcards/id373493387">https://apps.apple.com/us/app/ankimobile-flashcards/id373493387</a></li>
+<li>Android: <a href="https://play.google.com/store/apps/details?id=com.ichi2.anki&amp;hl=en">https://play.google.com/store/apps/details?id=com.ichi2.anki&amp;hl=en</a></li>
+</ul>
+<h1 id="introduktion">Introduktion<a hidden class="anchor" aria-hidden="true" href="#introduktion">#</a></h1>
+<p>Anki er et huskekortsprogram der kan bruges til at huske alt der kan nedskrives på et huskekort. Ankis algoritme tillader dig at huske uden at du behøver gøre andet, end at bruge programmet hver dag, og kigge de kort igennem, som programmet vil have dig til at kigge igennem. Dette gør det til et fantastisk program til at bruge til studie, selvstudie, arbejde m.m. Du kan for eksempel bruge det til at lære et nyt sprog, huske alle verdens lande, huske beviser og meget mere.</p>
+<h1 id="hvorfor-anki">Hvorfor Anki?<a hidden class="anchor" aria-hidden="true" href="#hvorfor-anki">#</a></h1>
+<p>Anki er et huskekortsprogram ligesom <em>quizlet</em>, <em>remnote</em>,<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> <em>memrise</em>, og <em>supermemo</em>, samt mange flere. Hvad der primært adskiller <em>Anki</em> fra mange af disse er at den:</p>
+<ol>
+<li>Er <em>open source</em>. Det vil sige at koden er frit tilgængelig.</li>
+<li>Bruger <em>spaced repetition</em>.</li>
+<li>Har en simpel, letforståelig brugeroverflade.</li>
+</ol>
+<p>Der er naturligvis flere ting end disse, men disse er nogle af de mest primære til hvorfor man skulle vælge <em>Anki</em> fremfor konkurrenterne.</p>
+<h2 id="huskekort">Huskekort<a hidden class="anchor" aria-hidden="true" href="#huskekort">#</a></h2>
+<p>Der er flere forskellige typer af huskekort du kan bruge i Anki, men i denne gennemgang vil vi kun kigge på 2: <em>Basic</em> og <em>Cloze</em>:</p>
+<p>Et <em>basic</em> kort er blot et kort bestående af en forside og en bagside. Forsiden kan for eksempel være &ldquo;Hvad er hovedstaden af Tyskland?&rdquo; hvortil bagsiden vil være svaret: &ldquo;Berlin&rdquo;.</p>
+<p>Et <em>cloze</em> kort lyder mere kompliceret i teorien, men er også utroligt nemt at forstå. Her har du ikke mere end én side, men på den side kan du <em>blokere</em> ord eller sekvenser af ord (samt tekst, tal, etc). Vi kommer til at kigge dybere på hvordan dette fungerer senere. Et eksempel kan være følgende sætning: &ldquo;Mitokondriet er cellens energiproducerende organel, hvor det primært genererer ATP gennem cellulær respiration.&rdquo; Denne kan laves om til et huskekort hvor <strong>fed skrift</strong> indikerer tekst vi blokerer. &ldquo;<strong>Mitokondriet</strong> er cellens <strong>energiproducerende organel</strong>, hvor det primært genererer <strong>ATP</strong> gennem <strong>cellulær respiration</strong>.&rdquo;</p>
+<p>Denne vil resultere i 4 huskekort, et hvor man ikke kan se ordet &ldquo;Mitokondriet&rdquo;, et hvor man ikke kan se &ldquo;Energiproducerende Organel&rdquo; etc. Det vil derfor se ud således, når du gennemgår kortet som ønsker Mitokondriet som svar:</p>
+<blockquote>
+<p>[&hellip;] er cellens energiproducerende organel, hvor det primært genererer ATP gennem cellulær respiration.</p>
+</blockquote>
+<p>Her er dit mål så at huske hvad der skal stå bag de tre punktummer.</p>
+<h2 id="spaced-repetition">Spaced Repetition<a hidden class="anchor" aria-hidden="true" href="#spaced-repetition">#</a></h2>
+<p>Det primære salgsargument for Anki er dens <em>spaced repetition</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> algoritme. En spaced repetition-algoritme optimerer huskeevne af huskekort. Det vil altså sige, at hvis du laver 100 kort til Anki, alle omkring et emne du gerne vil huske i lang tid, så kan algoritmen planlægge hvornår du skal kigge på dem igen, på en sådan måde hvor du vil kunne huske dem igen næste gang du ser dem.</p>
+<p>Premisset med en sådan algoritme, er at vi glemmer information afhængigt af hvor ofte vi ser informationen. Hvis du har set dit huskekort en enkelt gang, vil du glemme den hurtigt. Hvorimod, hvis du ser dent10 gange med et passende (variabelt) mellemrum mellem disse gange, vil du kunne huske det bedre.</p>
+<p>![[En kort introduktion til Anki - Spaced Repetition.png]]
+(Billede fra <a href="https://www.osmosis.org/learn/Spaced_repetition">https://www.osmosis.org/learn/Spaced_repetition</a>)</p>
+<p>Dette virker, fordi du gennemgår en proces der kaldes <em>active recall</em>,<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> hvor du aktivt forsøger at huske noget, fremfor at genlæse det igen, og igen. Dette forsøg på at huske, styrker din evne til at finde præcis den information frem igen, når du skal til at bruge det. Anki&rsquo;s algoritme forsøger at give dig dit huskekort <em>lige inden du glemmer det</em>. Derfor kræver det ekstra meget energi, men du husker det også bedre, fordi du styrker evnen til at finde præcis den information frem hver gang.</p>
+<p>Derudover tager Anki&rsquo;s algoritme hvor godt du kan huske kortet med i betragtning. Det er ikke bare &ldquo;Det kunne jeg ikke huske&rdquo;, eller &ldquo;Det kunne jeg godt huske&rdquo;. Afhængigt af hvor godt du husker det (<em>Slet ikke</em>, <em>Hårdt</em>, <em>Okay</em>, <em>Nemt</em>), justerer den på nogle variabler bag scenen, der siger både hvornår du skal se kortet igen, men også hvad der skal ske næste gang. For eksempel, hvis jeg husker et kort dårligt, så får jeg det måske igen i morgen. På dette tidspunkt, har Anki allerede udregnet hvad der så vil ske, hvis jeg husker kortet dårligt igen, og giver mig kortere tid før jeg ser kortet igen.</p>
+<h2 id="brugervenlighed">Brugervenlighed<a hidden class="anchor" aria-hidden="true" href="#brugervenlighed">#</a></h2>
+<p>Anki er utroligt nemt at bruge. Vi har ikke kigget på brugeroverfladen endnu, men du behøver ikke at trykke på mere end et par tastaturknapper for at lave og gennemgå kort.</p>
+<p>Brugeroverfladen er simpel, og let at forstå. Der er ikke en masse unødvendige funktioner, som du aldrig kommer til at bruge. Du kan dog, hvis det lyster, tilføje sådanne funktioner ved brug af <em>add-ons</em>, som vi kommer ind på senere.</p>
+<h1 id="hvornår-skal-man-bruge-anki">Hvornår Skal Man Bruge Anki?<a hidden class="anchor" aria-hidden="true" href="#hvornår-skal-man-bruge-anki">#</a></h1>
+<p>Anki er kun godt <strong>hvis du skal huske noget</strong>. Hvis dit mål med anki er at lære noget nyt, kan du ikke bruge det til noget. Du skal allerede havde lært informationen, og forstået den, før du kan forsøge at huske den. Hvis du sætter en svær ligning ind, og ikke forstår den endnu, vil du aldrig kunne huske den.</p>
+<p>Hvis jeg lige har læst en overfladisk gennemgang af anden verdenskrig, ville følgende kort være passeligt at tilføje:</p>
+<blockquote>
+<p><strong>Forside</strong>
+Hvornår sluttede 2. verdenskrig?
+<strong>Bagside</strong>
+2. September 1945</p>
+</blockquote>
+<p>Hvorimod, hvis du gennemgår præsentationen til en forelæsning du ikke har været til, hvor følgende står:</p>
+<blockquote>
+<p>$T$ er transformations matrixen til skalering.</p>
+</blockquote>
+<p>Men du hverken ved hvad skalering eller en transformations matrix er, så får du ikke noget ud af kortet. Du vil ikke kunne huske det, fordi du ikke forstår de ord. Du vil altid kunne forsøge at lave et kort, men det vil kræve markant mere af dig, at forsøge at huske det.</p>
+<h1 id="hvordan-bruger-man-anki">Hvordan Bruger Man Anki?<a hidden class="anchor" aria-hidden="true" href="#hvordan-bruger-man-anki">#</a></h1>
+<p>![[En kort introduktion til Anki - Brugeroverflade.png]]</p>
+<p>Når du starter Anki på computer for første gang, vil du finde en brugeroverflade meget lignende den på billedet over. Egentlig burde den eneste forskel være, at du kun har ét &ldquo;deck&rdquo;, hvor der udfra står &ldquo;0 0 0&rdquo;.</p>
+<h2 id="decks">Decks<a hidden class="anchor" aria-hidden="true" href="#decks">#</a></h2>
+<p><strong>1 - Decks</strong>
+Her finder du skærmen du er på lige nu. Der er her dine &ldquo;decks&rdquo; er. Decks er blot samlinger af huskekort, kategoriseret på en sådan måde, at de blive sammenlignet i samme &ldquo;session&rdquo;. Det vil altså sige, at hvis du laver et deck der hedder &ldquo;Lineær Algebra&rdquo;, og lægger kort ind med information om både lineær algebra og hunderacer, vil du både få huskekort om lineær algebra og hunderacer, når du gennemgår kortene.</p>
+<p>Der er flere fordele ved at organisere dine kort på en sådan måde, fremfor at have ét monolitisk deck, hvori du har alle dine kort. En af de vigtigste er, at du kan ændre på indstillingerne for hvert deck, og se statistikker for hvert deck. Vi vil dog ikke gå ind på indstillinger i denne guide.</p>
+<h2 id="tilføj-nye-kort">Tilføj Nye Kort<a hidden class="anchor" aria-hidden="true" href="#tilføj-nye-kort">#</a></h2>
+<p><strong>2 - Add</strong>
+Her kan du tilføje nye huskekort til dine decks.
+![[En kort introduktion til Anki - Add.png]]</p>
+<p>Her kan du skrive hvad der skal være på hhv. forsiden og bagsiden af dit huskekort. På den øverste bjælke ser du &ldquo;Type&rdquo; og &ldquo;Deck&rdquo;. Her bestemmer du hvilken type kort (e.g. Basic eller Cloze) du har lyst til at lave, og under hvilket deck de skal tilhøre. For eksempel kan man se på skærmprintet at jeg er ved at lave et simpelt huskekort under typen &ldquo;Basic&rdquo; til mit deck omhandlende <em>Geometric Computation</em>. Dette er et underdeck, hvilket vi ikke vil gå i detaljer med her, blot vid at du kan lave dem ved at trække dine decks ind i hinanden på &ldquo;Decks&rdquo; skærmen.</p>
+<p>På næstnederste bjælke ser du teksten &ldquo;Tags&rdquo;. Herunder kan du lave forskellige tags, til at kategorisere dine huskekort endnu mere. Hvis du skriver huskekort til en forelæsning, kan du foreksempel lave tagget &ldquo;Forelæsning9-9&rdquo; for at sige at det er forelæsningen fra den 9. September. Du kan også lave undertags ved at bruge &ldquo;::&rdquo;. For eksempel kan du lave tagget &ldquo;ComputationalGeometry::Forelæsning9-9&rdquo;. Ved denne er Forelæsning9-9 et &ldquo;undertag&rdquo; af ComputationalGeometry.</p>
+<p>På den nederste bjælke til højre kan du se knapperne &ldquo;Add&rdquo;, &ldquo;History&rdquo; og &ldquo;Close&rdquo;. Vi kigger kun på Add og Close. Add tilføjer kortet til decket, og close lukker vinduet du kigger på. I stedet for at klikke på Add hver gang du har lavet et nyt kort, kan du også blot trykke Ctrl + Enter. Derudover kan du skifte hvilken &ldquo;input&rdquo; du skriver i ved at trykke tab. Så du kan starte i &ldquo;Front&rdquo; og skrive dit input, e.g. &ldquo;Hvor mange stater har USA?&rdquo; trykke tab, og skrive &ldquo;50&rdquo;, efterfulgt af Ctrl + Enter. Så har du tilføjet et kort.</p>
+<h3 id="brug-af-cloze">Brug Af Cloze<a hidden class="anchor" aria-hidden="true" href="#brug-af-cloze">#</a></h3>
+<p>![[En kort introduktion til Anki - Cloze.png]]</p>
+<p>Det ovenstående skræmprint viser et &ldquo;Cloze&rdquo; kort, hvori der står: &ldquo;Amerika har {{c1::50}} stater&rdquo;. Når du gennemgår dette kårt vil du se &ldquo;Amerika har [&hellip;] stater.&rdquo; på forsiden og &ldquo;Amerika har 50 stater.&rdquo; på bagsiden. Du kan også lave mere end én blokering ved at lave flere instanser af {{c1::abc}}, eller du kan lave flere kort (som beskrevet tidligere) ved at forøge <em>x</em> i {{cx::abc}}, e.g. {{c2::kort2}}, {{c3::kort3}}. Du kan også blande disse sammen, så du har flere af samme <em>cx</em> og flere hvor <em>x</em> er anderledes, såsom følgende:</p>
+<p>&ldquo;<strong>{{c1::Napoléon Bonaparte}}</strong> (født <strong>{{c2::15. august 1769}}</strong>, død <strong>{{c3::5. maj 1821}}</strong>) var Frankrigs førstekonsul fra 1799 og var franskmændenes kejser under navnet <strong>{{c1::Napoléon I}}</strong> fra den 18. maj 1804 – 11. april 1814 og igen 20. marts – 22. juni 1815. Han erobrede og regerede det meste af det vestlige og centrale Europa.&rdquo;<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p>Når du gennemgår kort 1 vil du se følgende:
+&ldquo;<strong>[&hellip;]</strong> (født 15. august 1769, død 5. maj 1821) var Frankrigs førstekonsul fra 1799 og var franskmændenes kejser under navnet <strong>[&hellip;]</strong> fra den 18. maj 1804 – 11. april 1814 og igen 20. marts – 22. juni 1815. Han erobrede og regerede det meste af det vestlige og centrale Europa.&rdquo;</p>
+<p>Kort 2 og 3 vil give lignende resultater, men med de andre blokerede tekste. Når du laver et <em>cloze</em>-huskekort kan du bruge Ctrl + Shift + C for at lave en ny blokering, og Ctrl + Alt + Shift + C, for ikke at forøge tallet.</p>
+<h2 id="database-af-huskekort">Database Af Huskekort<a hidden class="anchor" aria-hidden="true" href="#database-af-huskekort">#</a></h2>
+<p><strong>3 - Browse</strong>
+På denne tab vil du have en oversigt over alle de huskekort du har lavet. Her kan du også ændre og slette huskekort, samt andre egenskaber. Disse vil vi dog ikke komme ind på.</p>
+<h2 id="statistik">Statistik<a hidden class="anchor" aria-hidden="true" href="#statistik">#</a></h2>
+<p><strong>4 - Stats</strong>
+Herinde vil du kunne se statistik for dine forskellige decks, eller for alle decks tilsammen. Du kan vælge et specifikt deck øverst. Hvis du shift-trykker på &ldquo;Stats&rdquo; vil du få den gamle version, hvilket nogle <em>add-ons</em> bruger til at vise statistik relevant for dem.</p>
+<h2 id="synkronisering">Synkronisering<a hidden class="anchor" aria-hidden="true" href="#synkronisering">#</a></h2>
+<p><strong>5 - Sync</strong>
+Anki har en gratis, indbygget funktionalitet til at kunne synkronisere dine huskekort. Det eneste det kræver er at du opretter en bruger. Dermed vil du også kunne tage dine huskekort til din mobil, eller en anden computer. Når du har lavet en bruger, skal du blot trykke &ldquo;sync&rdquo; for at Anki synkroniserer dine kort.</p>
+<h2 id="dine-decks">Dine Decks<a hidden class="anchor" aria-hidden="true" href="#dine-decks">#</a></h2>
+<p><strong>6 - Dine Decks</strong>
+Her kan du se dine decks. Jeg har forklaret det meste om dem i første sektion af dette. Dog kan du se til højre tre kolonner: <em>New</em>, <em>Learn</em> og <em>Due</em>. New er nye huskekort du endnu ikke har set. <em>Learn</em> er huskekort du ikke har lært ordentligt endnu. Disse kan også være kort du har lært, men har glemt og derfor skal se dem igen i dag. <em>Due</em> er kort du skal se i dag, som du har lært tidligere.</p>
+<p>Det er også her du gennemgår dine huskekort. Ved at trykke på en af dine decks, kommer du til en skærm lignende denne (antagelse på at du har lavet mindst ét huskekort til decket):</p>
+<p>![[En kort introduktion til Anki - Study Now.png]]</p>
+<p>Her skal du trykke &ldquo;Study Now&rdquo; for at begynde din session.</p>
+<p>![[En kort introduktion til Anki - Huskekort.png]]</p>
+<p>Dit kort kommer ikke til at se sådan her ud, men det kommer til at ligne i strukturen. Denne guide vil ikke gennemgå &ldquo;styling&rdquo;, hvilket er hvad der gør at kortet kan se anderledes ud.</p>
+<p>Nederst på kortet kan du se &ldquo;Show Answer&rdquo;. Du skal først trykke på dette når du har forsøgt at finde svaret til dit kort. Når du har gjort det, får du disse 4 valgmuligheder:
+![[En kort introduktion til Anki - Valgmuligheder.png]]</p>
+<p>Alt efter hvor godt du har husket skal du vælge en af disse. Jeg har en svag huskeregel, der afgører hvordan jeg vælger disse:</p>
+<ul>
+<li><strong>Again</strong>: Hvis jeg slet ikke kunne huske kortet, eller huskede forkert</li>
+<li><strong>Hard</strong>: Hvis det tog mig mere end 15 sekunder, og jeg måske var i tvivl om det var A eller B, men kom til den rette konklusion</li>
+<li><strong>Good</strong>: Hvis det tog mig mere end 5 sekunder (men jeg huskede det indenfor 15 sekunder), og jeg huskede det korrekt.</li>
+<li><strong>Easy</strong>: Hvis jeg huskede korrekt indenfor 5 sekunder.</li>
+</ul>
+<p>Ud fra hvordan du vælger, kan du se at der går kortere eller længere tid. Ved dette specifikke kort, ville jeg se kortet igen om 10 minutter hvis jeg slet ikke kunne huske det. Jeg ville derimod først se det om 2.1 måneder hvis jeg huskede det godt. Her er notationen <em>m</em> = minutter, <em>d</em> = dage, <em>mo</em> = måneder, <em>y</em> = år.</p>
+<h2 id="lav-et-nyt-deck">Lav Et Nyt Deck<a hidden class="anchor" aria-hidden="true" href="#lav-et-nyt-deck">#</a></h2>
+<p><strong>7 - Create Deck</strong>
+Her laver du et nyt deck. For denne guide er alt du behøver at finde et navn til det.</p>
+<h1 id="add-ons-og-delte-decks">Add-ons Og Delte Decks<a hidden class="anchor" aria-hidden="true" href="#add-ons-og-delte-decks">#</a></h1>
+<h2 id="add-ons">Add-ons<a hidden class="anchor" aria-hidden="true" href="#add-ons">#</a></h2>
+<p>Add-ons er funktionaliteter til Anki lavet udenfor Anki&rsquo;s grund. Du kan se de forskellige Add-ons, ved i øverste bjælke (Med File, Edit, View, etc.) at trykke følgende: <strong>Tools -&gt; Add-ons -&gt; Get Add-ons -&gt; Browse Add-ons</strong>. dette vil føre dig til siden <a href="https://ankiweb.net/shared/addons">https://ankiweb.net/shared/addons</a>. Find et addon, og find dens kode, og tryk denne kode ind i feltet i det vindue du fandt &ldquo;Browse Add-ons&rdquo; knappen på:
+![[En kort introduktion til Anki - Installer Addon.png]]
+Når du trykker &ldquo;OK&rdquo; installerer anki add-onen, og ved genstart er den integreret i Anki.</p>
+<p>Der er ingen add-ons der er nødvendige for Anki, og jeg vil derfor anbefale at kigge igennem de forskellige add-ons på siden, og se om der er nogen der kan hjælpe dig specifikt. Der er stor sandsynlighed for, at når du har brugt anki i noget tid, vil der være nogle ting du ikke synes er specielt fede, eller du mangler. Ved at kigge add-ons igennem, kan du med høj sandsynlighed finde en der hjælper på dit problem.</p>
+<h2 id="delte-decks">Delte Decks<a hidden class="anchor" aria-hidden="true" href="#delte-decks">#</a></h2>
+<p>Der ligger mange decks online, som folk allerede har lavet og delt. Du kan oftest finde dem på <a href="https://ankiweb.net/shared/decks">https://ankiweb.net/shared/decks</a>. Du kan importere dem til Anki ved at downloade dem, og dobbelt-trykke på den fil du downloader, og derefter bliver den importeret til Anki.</p>
+<p>Jeg vil dog ikke anbefale at bruge denne metode til noget udover almen viden såsom geografi. Når du laver dine egne kort husker du dem bedre, og du ved at de fungerer for dig, og at du ved præcis hvad der står deri. Hvis du downloader et andet deck kan vedkommende have lavet kortene på en uforståelig måde, eller du har ikke viden nok til at forstå kortene.</p>
+<h1 id="viderelæsning">Viderelæsning<a hidden class="anchor" aria-hidden="true" href="#viderelæsning">#</a></h1>
+<p>Ved lyst til mere læsning, kan  <a href="https://docs.ankiweb.net/">den officielle dokumentation</a> bruges.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Selve programmet er ikke et huskekortsprogram, men har en funktion til integration af huskekort.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Dansk: Gentagelse med mellemrum&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Dansk: Aktiv genkaldelse&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Taget fra Wikipedia 11-9-24. <strong>Fed Skrift</strong> er blot for fremhævelse.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">My New Hugo Site</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
