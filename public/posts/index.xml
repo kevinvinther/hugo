@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on Kevin&#39;s Noter</title>
+    <link>http://localhost:1313/hugo/posts/</link>
+    <description>Recent content in Posts on Kevin&#39;s Noter</description>
     <generator>Hugo -- 0.134.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Sep 2024 11:14:12 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/hugo/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>En kort introduktion til Anki</title>
-      <link>http://localhost:1313/posts/anki-introduktion/</link>
+      <link>http://localhost:1313/hugo/posts/anki-introduktion/</link>
       <pubDate>Wed, 11 Sep 2024 11:14:12 +0200</pubDate>
-      <guid>http://localhost:1313/posts/anki-introduktion/</guid>
+      <guid>http://localhost:1313/hugo/posts/anki-introduktion/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Mål&lt;/strong&gt;: Denne artikel vil give en kort introduktion til huskekortsprogrammet Anki. Introduktionen vil bestå af følgende:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Motivation for hvorfor Anki kan være et gavnligt program&lt;/li&gt;
