@@ -1,5 +1,9 @@
-baseURL: https://example.org/
+baseURL: https://kevinvinther.github.io/hugo
 languageCode: en-us
-title: My New Hugo Site
+title: "Kevin's Noter"
 theme: ["PaperMod"]
 tableOfContents: true
+module:
+  mounts:
+    - source: assets
+      target: assets

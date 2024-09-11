@@ -53,7 +53,8 @@ Det primære salgsargument for Anki er dens *spaced repetition*[^2] algoritme. E
 
 Premisset med en sådan algoritme, er at vi glemmer information afhængigt af hvor ofte vi ser informationen. Hvis du har set dit huskekort en enkelt gang, vil du glemme den hurtigt. Hvorimod, hvis du ser dent10 gange med et passende (variabelt) mellemrum mellem disse gange, vil du kunne huske det bedre.
 
-![[En kort introduktion til Anki - Spaced Repetition.png]]
+{{< image "En kort introduktion til Anki - Spaced Repetition.png" >}}
+
 (Billede fra https://www.osmosis.org/learn/Spaced_repetition)
 
 Dette virker, fordi du gennemgår en proces der kaldes *active recall*,[^3] hvor du aktivt forsøger at huske noget, fremfor at genlæse det igen, og igen. Dette forsøg på at huske, styrker din evne til at finde præcis den information frem igen, når du skal til at bruge det. Anki's algoritme forsøger at give dig dit huskekort *lige inden du glemmer det*. Derfor kræver det ekstra meget energi, men du husker det også bedre, fordi du styrker evnen til at finde præcis den information frem hver gang. 
@@ -85,7 +86,8 @@ Men du hverken ved hvad skalering eller en transformations matrix er, så får d
 
 # Hvordan Bruger Man Anki?
 
-![[En kort introduktion til Anki - Brugeroverflade.png]]
+{{< image "En kort introduktion til Anki - Brugeroverflade.png" >}}
+
 
 Når du starter Anki på computer for første gang, vil du finde en brugeroverflade meget lignende den på billedet over. Egentlig burde den eneste forskel være, at du kun har ét "deck", hvor der udfra står "0 0 0".
 
@@ -100,7 +102,8 @@ Der er flere fordele ved at organisere dine kort på en sådan måde, fremfor at
 
 **2 - Add**
 Her kan du tilføje nye huskekort til dine decks. 
-![[En kort introduktion til Anki - Add.png]]
+{{< image "En kort introduktion til Anki - Add.png" >}}
+
 
 Her kan du skrive hvad der skal være på hhv. forsiden og bagsiden af dit huskekort. På den øverste bjælke ser du "Type" og "Deck". Her bestemmer du hvilken type kort (e.g. Basic eller Cloze) du har lyst til at lave, og under hvilket deck de skal tilhøre. For eksempel kan man se på skærmprintet at jeg er ved at lave et simpelt huskekort under typen "Basic" til mit deck omhandlende *Geometric Computation*. Dette er et underdeck, hvilket vi ikke vil gå i detaljer med her, blot vid at du kan lave dem ved at trække dine decks ind i hinanden på "Decks" skærmen. 
 
@@ -110,7 +113,8 @@ På den nederste bjælke til højre kan du se knapperne "Add", "History" og "Clo
 
 ### Brug Af Cloze
 
-![[En kort introduktion til Anki - Cloze.png]]
+{{< image "En kort introduktion til Anki - Cloze.png" >}}
+
 
 Det ovenstående skræmprint viser et "Cloze" kort, hvori der står: "Amerika har {{c1::50}} stater". Når du gennemgår dette kårt vil du se "Amerika har [...] stater." på forsiden og "Amerika har 50 stater." på bagsiden. Du kan også lave mere end én blokering ved at lave flere instanser af {{c1::abc}}, eller du kan lave flere kort (som beskrevet tidligere) ved at forøge *x* i {{cx::abc}}, e.g. {{c2::kort2}}, {{c3::kort3}}. Du kan også blande disse sammen, så du har flere af samme *cx* og flere hvor *x* er anderledes, såsom følgende: 
 
@@ -144,16 +148,19 @@ Her kan du se dine decks. Jeg har forklaret det meste om dem i første sektion a
 Det er også her du gennemgår dine huskekort. Ved at trykke på en af dine decks, kommer du til en skærm lignende denne (antagelse på at du har lavet mindst ét huskekort til decket): 
 
 
-![[En kort introduktion til Anki - Study Now.png]]
+{{< image "En kort introduktion til Anki - Study Now.png" >}}
+
 
 Her skal du trykke "Study Now" for at begynde din session. 
 
-![[En kort introduktion til Anki - Huskekort.png]]
+{{< image "En kort introduktion til Anki - Huskekort.png" >}}
+
 
 Dit kort kommer ikke til at se sådan her ud, men det kommer til at ligne i strukturen. Denne guide vil ikke gennemgå "styling", hvilket er hvad der gør at kortet kan se anderledes ud. 
 
 Nederst på kortet kan du se "Show Answer". Du skal først trykke på dette når du har forsøgt at finde svaret til dit kort. Når du har gjort det, får du disse 4 valgmuligheder: 
-![[En kort introduktion til Anki - Valgmuligheder.png]]
+{{< image "En kort introduktion til Anki - Valgmuligheder.png" >}}
+
 
 Alt efter hvor godt du har husket skal du vælge en af disse. Jeg har en svag huskeregel, der afgører hvordan jeg vælger disse:
 * **Again**: Hvis jeg slet ikke kunne huske kortet, eller huskede forkert
@@ -173,7 +180,10 @@ Her laver du et nyt deck. For denne guide er alt du behøver at finde et navn ti
 ## Add-ons
 
 Add-ons er funktionaliteter til Anki lavet udenfor Anki's grund. Du kan se de forskellige Add-ons, ved i øverste bjælke (Med File, Edit, View, etc.) at trykke følgende: **Tools -> Add-ons -> Get Add-ons -> Browse Add-ons**. dette vil føre dig til siden https://ankiweb.net/shared/addons. Find et addon, og find dens kode, og tryk denne kode ind i feltet i det vindue du fandt "Browse Add-ons" knappen på:
-![[En kort introduktion til Anki - Installer Addon.png]]
+
+{{< image "En kort introduktion til Anki - Installer Addon.png" >}}
+
+
 Når du trykker "OK" installerer anki add-onen, og ved genstart er den integreret i Anki.
 
 Der er ingen add-ons der er nødvendige for Anki, og jeg vil derfor anbefale at kigge igennem de forskellige add-ons på siden, og se om der er nogen der kan hjælpe dig specifikt. Der er stor sandsynlighed for, at når du har brugt anki i noget tid, vil der være nogle ting du ikke synes er specielt fede, eller du mangler. Ved at kigge add-ons igennem, kan du med høj sandsynlighed finde en der hjælper på dit problem.
